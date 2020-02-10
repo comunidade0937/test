@@ -24,4 +24,4 @@ jobs:
         FTP_SERVER: ${{ secrets.FTP_SERVER }}
         FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
-        ARGS: --delete --use-pget-n=5 --parallel=5
+        ARGS: --delete --skip-noaccess --exclude=.ftpquota --use-pget-n=5 --parallel=5
